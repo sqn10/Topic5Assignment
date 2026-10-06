@@ -20,9 +20,13 @@
             Console.WriteLine();
             Console.WriteLine("Which planet do you want information for?");
             Int32.TryParse(Console.ReadLine(), out whichPlanet);
-            if (whichPlanet == 1 && <= 6)
+            if (whichPlanet >= 1 && whichPlanet <= 6)
             {
-
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("Please enter a valid option.");
             }
         }
     }
