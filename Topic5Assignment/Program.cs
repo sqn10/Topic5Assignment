@@ -83,11 +83,54 @@
         }
         public static void Task2()
         {
+            int operatorChoice;
+            double num1, num2, answer;
 
+            Console.WriteLine("Here is a simple calculator. I can do these operations:");
+            Console.WriteLine("1. +  2. -");
+            Console.WriteLine("3. ×  4. \u00F7");
+            Console.WriteLine("Please enter your choice below:");
+            Int32.TryParse(Console.ReadLine(), out operatorChoice);
+
+            Console.WriteLine();
+
+            Console.WriteLine("Enter the first number: ");
+            Double.TryParse(Console.ReadLine(), out num1);
+            Console.WriteLine("Enter the second number: ");
+            Double.TryParse(Console.ReadLine(), out num2);
+
+            if(operatorChoice == 1)
+            {
+                answer = num1 + num2;
+                Console.WriteLine("The answer to " + num1 + " + " + num2 + " is " + Math.Round(answer, 2) + ".");
+            }
+
+            else if(operatorChoice == 2)
+            {
+                answer = num1 - num2;
+                Console.WriteLine("The answer to " + num1 + " - " + num2 + " is " + Math.Round(answer, 2) + ".");
+            }
+
+            else if (operatorChoice == 3)
+            {
+                answer = num1 * num2;
+                Console.WriteLine("The answer to " + num1 + " × " + num2 + " is " + Math.Round(answer, 2) + ".");
+            }
+
+            else if (operatorChoice == 4)
+            {
+                answer = num1 / num2;
+                Console.WriteLine("The answer to " + num1 + " \u00F7 " + num2 + " is " + Math.Round(answer, 2) + ".");
+            }
+
+            else
+            {
+                Console.WriteLine("Please enter valid input.");
+            }
         }
         public static void Task3()
         {
-
+            // finish task 3
         }
     }
 }
