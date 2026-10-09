@@ -203,13 +203,13 @@
             Console.WriteLine();
             Console.WriteLine("Your final score is: " + score);
 
-            if(score == 4)
+            if (score == 4)
             {
                 percentScore = score / 4.00;
                 Console.WriteLine("You did perfect! " + Math.Round(percentScore * 100, 2) + "%.");
             }
 
-            else if(score == 3)
+            else if (score == 3)
             {
                 percentScore = score / 4.00;
                 Console.WriteLine("Alright! " + Math.Round(percentScore * 100, 2) + "%.");
@@ -225,6 +225,12 @@
             {
                 percentScore = score / 4.00;
                 Console.WriteLine("You suck! Go to school. " + Math.Round(percentScore * 100, 2) + "%.");
+            }
+
+            else if (score == 0)
+            {
+                percentScore = score / 4.00;
+                Console.WriteLine("You suck, A LOT! Go to school. " + Math.Round(percentScore * 100, 2) + "%.");
             }
         }
     }
