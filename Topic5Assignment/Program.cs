@@ -130,7 +130,102 @@
         }
         public static void Task3()
         {
-            // finish task 3
+            int answer;
+            double score = 0, percentScore = 0;
+
+            Console.WriteLine("Here is the best Mini-Quiz ever. It is about animals.");
+
+            Console.WriteLine();
+
+            Console.WriteLine("Question 1: What animal is known for barking? Type the number of your answer.");
+            Console.WriteLine("1.) Dog  2.) Cat  3.) Zebra  4.) Gerbil");
+            Int32.TryParse(Console.ReadLine(), out answer);
+            if (answer == 1)
+            {
+                Console.WriteLine();
+                Console.WriteLine("You are correct!");
+                score = score + 1;
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("Wrong...");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Question 2: How many legs does a spider have?");
+            Console.WriteLine("1.) 4  2.) 16  3.) 20  4.) 8");
+            Int32.TryParse(Console.ReadLine(), out answer);
+            if (answer == 4)
+            {
+                Console.WriteLine();
+                Console.WriteLine("You are correct!");
+                score = score + 1;
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("Wrong...");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Question 3: What is a baby kangaroo called?");
+            Console.WriteLine("1.) Johnny  2.) Bill  3.) Joey  4.) Steven");
+            Int32.TryParse(Console.ReadLine(), out answer);
+            if (answer == 3)
+            {
+                Console.WriteLine();
+                Console.WriteLine("You are correct!");
+                score = score + 1;
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("Wrong...");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Question 4: What is the animal with a long neck and spots?");
+            Console.WriteLine("1.) Elephant  2.) Giraffe  3.) Pony  4.) Turtle");
+            Int32.TryParse(Console.ReadLine(), out answer);
+            if (answer == 2)
+            {
+                Console.WriteLine();
+                Console.WriteLine("You are correct!");
+                score = score + 1;
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("Wrong...");
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Your final score is: " + score);
+
+            if(score == 4)
+            {
+                percentScore = score / 4.00;
+                Console.WriteLine("You did perfect! " + Math.Round(percentScore * 100, 2) + "%.");
+            }
+
+            else if(score == 3)
+            {
+                percentScore = score / 4.00;
+                Console.WriteLine("Alright! " + Math.Round(percentScore * 100, 2) + "%.");
+            }
+
+            else if (score == 2)
+            {
+                percentScore = score / 4.00;
+                Console.WriteLine("Half marks. " + Math.Round(percentScore * 100, 2) + "%.");
+            }
+
+            else if (score == 1)
+            {
+                percentScore = score / 4.00;
+                Console.WriteLine("You suck! Go to school. " + Math.Round(percentScore * 100, 2) + "%.");
+            }
         }
     }
 }
